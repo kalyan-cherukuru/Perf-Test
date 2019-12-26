@@ -1232,9 +1232,9 @@ sampler.getHeaderManager().add(new Header(&quot;Authorization&quot;,&quot;Bearer
   &quot;facility_id&quot;: &quot;1&quot;,&#xd;
   &quot;inbound_outbound&quot;: &quot;OUTBOUND&quot;,&#xd;
   &quot;trailer_load_type&quot;: &quot;L&quot;,&#xd;
-  &quot;scheduled_datetime&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss&apos;Z&apos;)}&quot;,  &#xd;
+  &quot;scheduled_datetime&quot;: &quot;${__time(2020-08-dd&apos;T&apos;hh:mm:ss&apos;Z&apos;)}&quot;,  &#xd;
   &quot;scheduled_duration&quot;: 30,&#xd;
-  &quot;confirmation_datetime&quot;: &quot;2019-12-22T16:17:54Z&quot;,&#xd;
+  &quot;confirmation_datetime&quot;: &quot;${__time(2020-12-dd&apos;T&apos;hh:mm:ss&apos;Z&apos;)}&quot;,&#xd;
   &quot;comments&quot;: &quot;Related Appointments Comments&quot;,&#xd;
   &quot;carrier_code&quot;: &quot;BAYN&quot;,&#xd;
   &quot;appointment_contact_name&quot;: &quot;Matt&quot;,&#xd;
@@ -1266,7 +1266,7 @@ sampler.getHeaderManager().add(new Header(&quot;Authorization&quot;,&quot;Bearer
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="49586">200</stringProp>
               </collectionProp>
@@ -1289,9 +1289,9 @@ sampler.getHeaderManager().add(new Header(&quot;Authorization&quot;,&quot;Bearer
   &quot;appointment_id&quot;: &quot;${random}&quot;,&#xd;
   &quot;inbound_outbound&quot;: &quot;OUTBOUND&quot;,&#xd;
   &quot;trailer_load_type&quot;: &quot;L&quot;,&#xd;
-  &quot;scheduled_datetime&quot;: &quot;${__time(yyyy-MM-dd&apos;T&apos;hh:mm:ss&apos;Z&apos;)}&quot;,&#xd;
+  &quot;scheduled_datetime&quot;: &quot;${__time(2020-08-dd&apos;T&apos;hh:mm:ss&apos;Z&apos;)}&quot;,&#xd;
   &quot;scheduled_duration&quot;: 30,&#xd;
-  &quot;confirmation_datetime&quot;: &quot;2019-12-20T16:17:54Z&quot;,&#xd;
+  &quot;confirmation_datetime&quot;: &quot;${__time(2020-12-dd&apos;T&apos;hh:mm:ss&apos;Z&apos;)}&quot;,&#xd;
   &quot;comments&quot;: &quot;Related Appointments Comments&quot;,&#xd;
   &quot;carrier_code&quot;: &quot;BAYN&quot;,&#xd;
   &quot;appointment_contact_name&quot;: &quot;Matty&quot;,&#xd;
